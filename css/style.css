@@ -197,9 +197,9 @@ nav > ul > li:hover::before{
   scale: 1;
   /* color: var(--brandColor); */
 }
-nav > ul > li:hover a{
+/* nav > ul > li:hover a{
 color: var(--brandColor);
-}
+} */
 nav > ul > i{
   margin: auto;
   cursor: pointer;
@@ -359,7 +359,7 @@ nav .dropDown-menu li a {
 .page1_left .page1_left_innerbottom > h4{
   /* text-align: center; */
   font-family: font4;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #1f1f1f65;
 }
 .page1_left_innerbottom > button{
@@ -1011,9 +1011,9 @@ nav .dropDown-menu li a {
 }
 
 .consultants .booking-card .book-container .content .btn:hover {
-  background: white;
-  border: 0px solid #f94c1c;
-  color: var(--blue);
+  background: #f94c1c;
+  border: 3px solid #fff;
+  color:#fff;
 }
 
 .consultants .booking-card .informations-container {

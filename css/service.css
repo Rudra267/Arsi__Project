@@ -1,0 +1,23 @@
+
+.headerBox{
+    padding-top: 95px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.headerBox img{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.6);
+    object-fit: cover;
+}
+.header_Text{
+    color: #fff;
+    z-index: 1;
+}

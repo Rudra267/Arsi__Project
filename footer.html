@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Level Dropdown Navbar with Scroll Effect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: red;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+/* Submenu Styles */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .submenu-title {
+  padding: 10px;
+  display: block;
+  color: white;
+  cursor: pointer;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  top: 0;
+  left: 100%;
+  min-width: 150px;
+}
+
+.dropdown-submenu:hover .submenu-content {
+  display: block;
+}
+
+.submenu-content a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.submenu-content a:hover {
+  background-color: #666;
+}
+
+</style>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="logo">MyLogo</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="#">Our Story</a>
+          <a href="#">Team</a>
+          <a href="#">Careers</a>
+          <div class="dropdown-submenu">
+            <a href="#" class="submenu-title">More About Us</a>
+            <div class="submenu-content">
+              <a href="#">Mission</a>
+              <a href="#">Vision</a>
+              <a href="#">Values</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Services</a>
+        <div class="dropdown-content">
+          <a href="#">Consulting</a>
+          <a href="#">Development</a>
+          <a href="#">Support</a>
+          <div class="dropdown-submenu">
+            <a href="#" class="submenu-title">More Services</a>
+            <div class="submenu-content">
+              <a href="#">Training</a>
+              <a href="#">Implementation</a>
+              <a href="#">Maintenance</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Contact Us</a>
+        <div class="dropdown-content">
+          <a href="#">Email</a>
+          <a href="#">Phone</a>
+          <a href="#">Address</a>
+          <div class="dropdown-submenu">
+            <a href="#" class="submenu-title">Social Media</a>
+            <div class="submenu-content">
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Sample content to scroll down -->
+  <div style="height: 2000px; padding-top: 60px;">
+    <h1>Scroll down to see the navbar color change</h1>
+  </div>
+
+  <script>
+    // JavaScript to change the navbar color on scroll
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) { // Adjust the scroll distance as needed
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+  </script>
+</body>
+</html>

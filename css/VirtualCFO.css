@@ -1,0 +1,96 @@
+.report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.report .container {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.report .header {
+    background-color: #f94c1c;
+    padding: 60px 20px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.report .header h1 {
+    font-family: font4;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.report .header p {
+    font-family: font2;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.report .cards {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.report .card {
+    flex: 1;
+    min-width: 200px;
+    /* max-width: 250px; */
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.report .card:hover {
+    transform: translateY(-10px);
+}
+
+.report .card .number {
+    width: 60px;
+    height: 60px;
+    /* background-color: #00bfa6; */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 0 auto 15px;
+}
+
+.report .card h3 {
+    font-family: font4;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.report .card p {
+    font-family: font2;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.report .card a {
+    color: #00bfa6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.report .card a:hover {
+    text-decoration: underline;
+}

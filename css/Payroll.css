@@ -1,0 +1,50 @@
+
+
+.Benifits_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.benifits_card{
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+.Benifits_card > h1{
+    margin: 40px 0 0 0;
+    font-size: 3em;
+    color: #000;
+    font-family: font1;
+    text-align: center;
+}
+
+.Benifits_card .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Benifits_card .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.Benifits_card .card h2 {
+    font-family: font4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Benifits_card .card p {
+    font-family: font2;
+    font-size: 16px;
+    text-align: left;
+}

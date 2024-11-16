@@ -108,7 +108,7 @@ color: #040404a1;
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 5em -1em rgba(0, 0, 0, 0.414);
-    transition: all, var(--transition-time);
+    transition: all, var(--transition-time) ease;
     position: relative;
     overflow: hidden;
     border: 10px solid #ccc;

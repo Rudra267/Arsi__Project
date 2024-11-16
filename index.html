@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARSI</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
@@ -16,104 +17,83 @@
               </svg>
               <form action="">
                 <input type="search" autofocus required>
-                <i class="fa fa-search"></i>
+                
                 <!-- <button onclick="clearInput()">Clear</a> -->
               </form>
         </div>
     </div>
     <div class="container">
    
-    <nav class="navbar" id="navbar">
-      <div class="logo"><img width="250px" src="./img/brand_logo.png" alt=""></div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        
-        <li class="dropdown">
-          <a href="./page/About/About_Company.html" class="dropbtn">About us</a>
-          <div class="dropdown-content">
-            <!-- First item with submenu -->
-            <div class="dropdown-submenu">
-              <a href="./page/About/About_Company.html" class="submenu-title">About Company</a>
-              <!-- <div class="submenu-content">
-                <a href="./Account_Outsourcing.html">Accounts Outsourcing</a>
-                <a href="#">Payroll</a> -->
-                <!-- <a href="#">Accounts Payable/Receivable</a> -->
-              <!-- </div> -->
-            </div>
-            
-            <!-- Second item with submenu -->
-            <div class="dropdown-submenu">
-              <a href="#" class="submenu-title">Team</a>
-              <div class="submenu-content">
-                <a href="#">Founders</a>
-                <a href="#">Leadership Team</a>
-                <!-- <a href="#">Budgeting & Forecasting</a> -->
+      <nav class="navbar" id="navbar">
+        <div class="logo">
+          <img width="250px" src="./img/brand_logo.png" alt="Brand Logo">
+        </div>
+        <svg id="menu-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+    
+          <li class="dropdown">
+            <a href="./page/About/About_Company.html" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                <a href="./page/About/About_Company.html" class="submenu-title">About Company</a>
+              </div>
+              <div class="dropdown-submenu">
+                <a href="#" class="submenu-title">People</a>
+                <div class="submenu-content">
+                  <a href="#">Founders</a>
+                  <a href="#">Leadership Team</a>
+                </div>
               </div>
             </div>
-  
-            <!-- Remaining dropdown items without submenus -->
-            <!-- <a href="#">Risk (Compliance as a Service)</a>
-            <a href="#">Tax (Tax compliance & Tax Planning)</a>
-            <a href="#">Transaction Advisory</a>
-            <a href="#">E Records</a> -->
-          </div>
-        </li>
-  
-
-
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Product</a>
-          <div class="dropdown-content">
-            <a href="#">CompSeqr</a>
-            <a href="#">ProEDox</a>
-            <!-- <a href="#">Careers</a> -->
-          </div>
-        </li>
-  
-       
-
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Services</a>
-        <div class="dropdown-content">
-          <!-- First item with submenu -->
-          <div class="dropdown-submenu">
-            <a href="./Account_Outsourcing.html" class="submenu-title">Transactional Accounting services</a>
-            <div class="submenu-content">
-              <a href="./Account_Outsourcing.html">Accounts Outsourcing</a>
-              <a href="./Payroll.html">Payroll</a>
-              <!-- <a href="#">Accounts Payable/Receivable</a> -->
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Product</a>
+            <div class="dropdown-content">
+              <a href="#">CompSeqr</a>
+              <a href="#">ProEDox</a>
             </div>
-          </div>
-          
-          <!-- Second item with submenu -->
-          <div class="dropdown-submenu">
-            <a href="./page/service/Virtual CFO.html" class="submenu-title">Advisory/Consulting</a>
-            <div class="submenu-content">
-              <a href="./page/service/Virtual CFO.html">Virtual CFO</a>
-              <a href="./page/service/Automation.html">Automation</a>
-              <!-- <a href="#">Budgeting & Forecasting</a> -->
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                <a href="#" class="submenu-title">Transactional Accounting Services</a>
+                <div class="submenu-content">
+                  <a href="./Account_Outsourcing.html">Accounts Outsourcing</a>
+                  <a href="./Payroll.html">Payroll</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu">
+                <a href="./page/service/Virtual CFO.html" class="submenu-title">Advisory/Consulting</a>
+                <div class="submenu-content">
+                  <a href="./page/service/Virtual CFO.html">Virtual CFO</a>
+                  <a href="./page/service/Automation.html">Automation</a>
+                </div>
+              </div>
+              <a href="./page/service/Risk_Compliance.html">Risk (Compliance as a Service)</a>
+              <a href="./page/service/Tax.html">Tax (Tax compliance & Tax Planning)</a>
+              <a href="./page/service/Transaction.html">Transaction Advisory</a>
+              <a href="./page/service/E Records.html">E Records</a>
             </div>
-          </div>
-
-          <!-- Remaining dropdown items without submenus -->
-          <a href="./page/service/Risk_Compliance.html">Risk (Compliance as a Service)</a>
-          <a href="./page/service/Tax.html">Tax (Tax compliance & Tax Planning)</a>
-          <a href="./page/service/Transaction.html">Transaction Advisory</a>
-          <a href="./page/service/E Records.html">E Records</a>
-        </div>
-      </li>
-
-  
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Contact Us</a>
-          <div class="dropdown-content">
-            <a href="#">Email</a>
-            <a href="#">Phone</a>
-            <a href="#">Address</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Contact Us</a>
+            <div class="dropdown-content">
+              <a href="#">Email</a>
+              <a href="#">Phone</a>
+              <a href="#">Address</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
 
     <div class="containt">
         <div class="page1 page">
@@ -126,7 +106,7 @@
                 <h1>Giving you a
                   Financial
                     Power</h1>
-                    <h4>ARSI Consulting LLP, believes that excellence and integrity are the cornerstones of our business and We strive to build long-term relationships with our clients based on trust, transparency, and mutual respect.</h4>
+                    <h4>ARSI Business Finance & Technology consulting, believes that excellence and integrity are the cornerstones of our business and We strive to build long-term relationships with our clients based on trust, transparency, and mutual respect.</h4>
                     <button>Discover More >></button>
             </div>
         </div>
@@ -175,13 +155,13 @@
                     </svg>
                     About Arsi</h3>
                 <div class="page2_right_innerbottom">
-                    <h1>Helping you to  <br>
-                      Live your Dream</h1>
-                        <h4>25 Years of experience in consulting service</h4>
+                    <h1>Your Partner in Excellence and Growth</h1>
+                        <!-- <h4>25 Years of experience in consulting service</h4> -->
                         <p>
-                          Our collaborative approach means we work closely with you to understand your business  and provide tailored solutions that meet your specific needs.
-                        </p>
-                            <div class="page2_right_img_conatiner">
+Welcome to ARSI Business Finance & Technology consulting, your trusted partner in navigating financial and consulting complexities. Rooted in excellence and integrity, we are committed to empowering businesses to succeed in today’s dynamic financial and regulatory environment.
+
+Our comprehensive range of specialized services is tailored to meet the unique needs of each client, delivering solutions that drive growth and long-term success. At ARSI Consulting LLP, we place excellence and ethical integrity at the core of everything we do.                        </p>
+                            <!-- <div class="page2_right_img_conatiner">
                                <div class="img">
                                 <img src="./img/page2_right_image.png" alt="">
                                </div>
@@ -196,15 +176,15 @@
                                       
                                         Lewis G. Valazquez</h3>
                                </div>
-                            </div>
+                            </div> -->
                         <button>Discover More >></button>
                 </div>
             </div>
         </div>
 
         <div class=" page3">
-            <div class="page2_right" style="width: 70%;">
-                <h3><svg width="40" height="8" viewBox="0 0 98 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class=" count_page">
+                <h3 class="title"><svg width="40" height="8" viewBox="0 0 98 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.00003 3.99997L94 3.99997" stroke="#F94D1C" stroke-width="8" stroke-linecap="round"/>
                     </svg>
                     Company Vision</h3>
@@ -215,10 +195,10 @@
                     </p>
 
 
-                    <div class="page3_cards">
+                    <!-- <div class="page3_cards">
                         <div class="page3_card">
                           
-<main class="page-content">
+
     <div class="card card1">
       <div class="content">
         <h2 class="title">Mountain View</h2>
@@ -245,7 +225,7 @@
     </div>
   </main>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -283,11 +263,11 @@
   <div class="scroll">
     <p class="service_provide"><svg width="40" height="8" viewBox="0 0 98 8" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4.00003 3.99997L94 3.99997" stroke="#F94D1C" stroke-width="8" stroke-linecap="round"/>
-      </svg> Service We Peovide</p>
+      </svg> Service We Provide</p>
     <div class="infinite-scroll" style="--quantity:8;--width:400px;--height:250px">
       <path d="M4.00003 3.99997L94 3.99997" stroke="#F94D1C" stroke-width="8" stroke-linecap="round"/>
       </svg>
-      Testimonial</h3>
+      </h3>
     <div class="items">
       <div class="scroll-card" style="--pos:1">
            <h1>Accounting Outsourcing</h1>
@@ -403,7 +383,7 @@
       <div class="more-information">
         <div class="info-and-date-container">
         </div>
-        <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis culpa. Expedita architecto nesciunt, rem distinctio</p>
+        <p class="disclaimer">"Switching to Arsi Accounting Group was a game-changer for us. Their proactive strategies and prompt support have significantly improved our financial health. We're grateful for their invaluable guidance."</p>
         </div>
     </div>
   </li>
@@ -534,14 +514,14 @@ window.addEventListener('scroll', function() {
   }
 });
 
-        document.querySelector('#search_btn_nav').addEventListener('click',function(){
-            document.querySelector('.search_box').classList.add('active_search_box');
-            document.querySelector('.close_btn').style.scale = '1';
-        })
-        document.querySelector('.close_btn').addEventListener('click',function(){
-            document.querySelector('.search_box').classList.remove('active_search_box');
-            document.querySelector('.close_btn').style.scale = '0';
-        })
+        // document.querySelector('#search_btn_nav').addEventListener('click',function(){
+        //     document.querySelector('.search_box').classList.add('active_search_box');
+        //     document.querySelector('.close_btn').style.scale = '1';
+        // })
+        // document.querySelector('.close_btn').addEventListener('click',function(){
+        //     document.querySelector('.search_box').classList.remove('active_search_box');
+        //     document.querySelector('.close_btn').style.scale = '0';
+        // })
         
 
 function Counter(){
@@ -599,6 +579,15 @@ $(function() {
 }
 
 Counter();
+
+
+  const menuToggle = document.querySelector('#menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  console.log("hello")
+  navLinks.classList.toggle('active');
+});
 
     </script>
 </body>

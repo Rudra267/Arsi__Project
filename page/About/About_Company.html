@@ -13,69 +13,83 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar" id="navbar">
-            <div class="logo"><img width="250px" src="../../img/brand_logo.png" alt=""></div>
-            <ul class="nav-links">
-              <li><a href="../../index.html">Home</a></li>
-              
-              <li class="dropdown">
-                <a href="#" class="dropbtn">About</a>
-                <div class="dropdown-content">
-                  <a href="#">About Company</a>
-                  <a href="#">About Founder</a>
-                  <a href="#">Careers</a>
-                </div>
-              </li>
-        
-             
-      
-            <li class="dropdown">
-              <a href="#" class="dropbtn">Services</a>
-              <div class="dropdown-content">
-                <!-- First item with submenu -->
-                <div class="dropdown-submenu">
-                  <a href="#" class="submenu-title">Transactional Accounting services</a>
-                  <div class="submenu-content">
-                    <a href="../../Account_Outsourcing.html">Accounts Outsourcing</a>
-                    <a href="../../Payroll.html">Payroll</a>
-                    <!-- <a href="#">Accounts Payable/Receivable</a> -->
-                  </div>
-                </div>
-                
-                <!-- Second item with submenu -->
-                <div class="dropdown-submenu">
-                  <a href="#" class="submenu-title">Advisory/Consulting</a>
-                  <div class="submenu-content">
-                    <a href="../service/Virtual CFO.html">Virtual CFO</a>
-                    <a href="../service/Automation.html">Automation</a>
-                    <!-- <a href="#">Budgeting & Forecasting</a> -->
-                  </div>
-                </div>
-      
-                <!-- Remaining dropdown items without submenus -->
-                <a href="../../page/service/Risk_Compliance.html">Risk (Compliance as a Service)</a>
-                <a href="../../page/service/Tax.html">Tax (Tax compliance & Tax Planning)</a>
-                <a href="../../page/service/Transaction.html">Transaction Advisory</a>
-                <a href="#">E Records</a>
+      <nav class="navbar" id="navbar">
+        <div class="logo">
+          <img width="200px" src="../../img/brand_logo.png" alt="Brand Logo">
+        </div>
+        <svg id="menu-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+    
+          <li class="dropdown">
+            <a href="./page/About/About_Company.html" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                <a href="./page/About/About_Company.html" class="submenu-title">About Company</a>
               </div>
-            </li>
-      
-        
-              <li class="dropdown">
-                <a href="#" class="dropbtn">Contact Us</a>
-                <div class="dropdown-content">
-                  <a href="#">Email</a>
-                  <a href="#">Phone</a>
-                  <a href="#">Address</a>
+              <div class="dropdown-submenu">
+                <a href="#" class="submenu-title">People</a>
+                <div class="submenu-content">
+                  <a href="#">Founders</a>
+                  <a href="#">Leadership Team</a>
                 </div>
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Product</a>
+            <div class="dropdown-content">
+              <a href="#">CompSeqr</a>
+              <a href="#">ProEDox</a>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <div class="dropdown-submenu">
+                <a href="#" class="submenu-title">Transactional Accounting Services</a>
+                <div class="submenu-content">
+                  <a href="./Account_Outsourcing.html">Accounts Outsourcing</a>
+                  <a href="./Payroll.html">Payroll</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu">
+                <a href="./page/service/Virtual CFO.html" class="submenu-title">Advisory/Consulting</a>
+                <div class="submenu-content">
+                  <a href="./page/service/Virtual CFO.html">Virtual CFO</a>
+                  <a href="./page/service/Automation.html">Automation</a>
+                </div>
+              </div>
+              <a href="./page/service/Risk_Compliance.html">Risk (Compliance as a Service)</a>
+              <a href="./page/service/Tax.html">Tax (Tax compliance & Tax Planning)</a>
+              <a href="./page/service/Transaction.html">Transaction Advisory</a>
+              <a href="./page/service/E Records.html">E Records</a>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Contact Us</a>
+            <div class="dropdown-content">
+              <a href="#">Email</a>
+              <a href="#">Phone</a>
+              <a href="#">Address</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
         <div class="containt">
             <div class="service_page1 ">
               <div class="video">
                 <video src="../../Video/videoAboutCompany.mp4" autoplay muted loop ></video>
-                <h1 class="header"> <span>About</span> Company</h1>
+               <div class="header">
+                <img src="../../img/brand_logo.png" alt="">
+               </div>
               </div>
 
 
@@ -243,5 +257,6 @@
             </div>
          </footer> 
     </div>
+    <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>
 </body>
 </html>

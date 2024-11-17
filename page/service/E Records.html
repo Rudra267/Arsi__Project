@@ -340,5 +340,18 @@
          </footer> 
     </div>
     <script src="https://kit.fontawesome.com/b4564537dc.js" crossorigin="anonymous"></script>
+    <script>
+      function toggleNav(){
+    const menuToggle = document.querySelector('#menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  menuToggle.addEventListener('click', () => {
+    console.log("hello")
+    navLinks.classList.toggle('active');
+  });
+  }
+  
+  toggleNav()
+    </script>
 </body>
 </html>
